@@ -5,7 +5,7 @@ import { BsChatLeft } from 'react-icons/bs';
 import { RiNotification3Line } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
-import Avatar from '../data/avatar.jpg'
+import Me from '../data/me.jpg'
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { useStateContext } from '../contexts/ContextProvider'
@@ -76,10 +76,10 @@ const Navbar = () => {
         />
         <TooltipComponent content='Profile' position='BottomCenter'>
           <div className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg' onClick={()=>handleClick('userProfile')}>
-            <img className='rounded-full h-8 w-8' src={Avatar} alt="" />
+            <img className='rounded-full h-8 w-8' src={Me} alt="" />
             <p>
               <span className='text-gray-400 text-14'>Hi,</span>{''}
-              <span className='text-gray-400 font-bold ml-1 text-14'>Michael</span>
+              <span className='text-gray-400 font-bold ml-1 text-14'>Nabil</span>
             </p>
             <MdKeyboardArrowDown className='text-gray-400 text-14'/>
           </div>
