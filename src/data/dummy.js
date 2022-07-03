@@ -3117,6 +3117,16 @@ export const lineCustomSeries = [
     type: 'Line' },
 
 ];
+export const lineCustomSeries2 = [
+  { dataSource: lineChartData[0],
+    xName: 'x',
+    yName: 'y',
+    name: 'Germany',
+    width: '2',
+    marker: { visible: true, width: 10, height: 10 },
+    type: 'Line' },
+
+];
 
 export const pieChartData = [
   { x: 'Labour', y: 18, text: '18%' },
