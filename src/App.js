@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {FiSettings} from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
@@ -13,7 +13,7 @@ import { useStateContext } from './contexts/ContextProvider'
 const App = () => {
 
     
-    const {activeMenu, setActiveMenu, themeSettings, setthemeSettings, currentColor, currentMode} = useStateContext()
+    const {activeMenu, themeSettings, setthemeSettings, currentColor, currentMode} = useStateContext()
   return (
     <div className={currentMode==='Dark' ? 'dark' : ''}>
         <BrowserRouter>

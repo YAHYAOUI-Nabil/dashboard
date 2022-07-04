@@ -24,14 +24,14 @@ const NavButton = ({title, customFunc, icon, color, dotColor}) => (
 
 const Navbar = () => {
 
-  const {activeMenu, setActiveMenu, handleClick, isClicked, setisClicked, screenSize, setscreenSize, currentColor} = useStateContext()
+  const { setActiveMenu, handleClick, isClicked, screenSize, setscreenSize, currentColor} = useStateContext()
 
   useEffect(() => {
     const handleResize = ()=>setscreenSize(window.innerWidth)
     window.addEventListener('resize', handleResize)
     handleResize()
     return () => window.removeEventListener('resize', handleResize)
-  }, [])
+  }, [setscreenSize])
 
   useEffect(() => {
    if(screenSize<=900){
@@ -40,7 +40,7 @@ const Navbar = () => {
     setActiveMenu(true)
    }
     
-  }, [screenSize])
+  }, [screenSize, setActiveMenu])
   
   
 
