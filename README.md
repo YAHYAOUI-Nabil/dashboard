@@ -24,7 +24,7 @@
 ## 2. Installation <a name="heading--2"/>
 
 ```
-git clone https://github.com/YAHYAOUI-Nabil/Dashboard.git
+git clone https://github.com/YAHYAOUI-Nabil/dashboard.git
 npm install
 npm start
 ```
